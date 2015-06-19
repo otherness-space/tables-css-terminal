@@ -26,7 +26,10 @@ selector {
 
 body, header, nav, main, section, aside, footer html {
     /** */
+
+    width: 100%
 }
+
 body {
     /** */
 }
