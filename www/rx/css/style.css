@@ -1,6 +1,7 @@
-.tableStyle, .tableColGroupNumber, .tableColGroupCod, .tableColNumber, .tableColCode, .tableRowGroupOdd, .tableRowGroupEven, .tableRowOdd, .tableRowEven, .tableCellNumber, .tableCellCode {
+html, body, header, nav, main, section, article, table, aside, footer, .tableStyle, .tableColGroupNumber, .tableColGroupCod, .tableColNumber, .tableColCode, .tableRowGroupOdd, .tableRowGroupEven, .tableRowOdd, .tableRowEven, .tableCellNumber, .tableCellCode {
 
     /**  */
+    box-sizing: border-box;
 
 }
 
@@ -19,7 +20,7 @@
 .tableCellNumber, .tableCellCode {
 
     /**  */
-    
+
 }
 
 
