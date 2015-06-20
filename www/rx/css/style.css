@@ -355,19 +355,21 @@ h1 {
     /**  */
     width: 100%;
 }
-.table-col-number {
-    /**  */
+
+.table-col-number, .table-col-code {
+
     display: table-column;
-    text-align: left;
     min-width: 2em;
     min-height: 2em;
 }
+
+.table-col-number {
+    /**  */
+    text-align: left;
+}
 .table-col-code {
     /**  */
-    display: table-column;
     text-align: right;
-    min-width: 2em;
-    min-height: 2em;
 }
 .table-row-group-odd {
     /**  */
