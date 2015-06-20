@@ -346,6 +346,22 @@ h1 {
     border: 0.0625rem solid black;
     border-collapse: collapse;
 }
+
+.terminal-box-style {
+
+    display: block;
+    align-content: flex-start;
+    border: 0.0625em solid Gainsboro;
+    max-width: 19.375em;
+    max-height: 10rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.25em;
+    margin-right: 0;
+    padding-right: 0;
+    overflow-x: auto;
+    
+}
 .table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code {
     /**  */
 }
@@ -367,6 +383,9 @@ h1 {
 
 .table-style {
     /**  */
+    display: table;
+    table-layout: auto;
+    width: 19.375em;
 
 }
 .table-col-group-number {
