@@ -303,6 +303,8 @@ h1 {
     margin-right: 0;
     padding-right: 0;
     overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
 }
 .terminal-box-style:hover {
     max-width: 100%;
