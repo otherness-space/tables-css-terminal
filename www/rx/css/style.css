@@ -360,8 +360,13 @@ h1 {
     margin-right: 0;
     padding-right: 0;
     overflow-x: auto;
-    
+
 }
+
+.terminal-box-style:hover {
+    max-width: 100%;
+}
+
 .table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code {
     /**  */
 }
