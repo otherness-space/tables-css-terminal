@@ -1,4 +1,4 @@
-html, body, header, nav, main, section, article, table, aside, footer, div, h1, h2, h3, h4, h5, h6, .table-style, .table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code, .table-row-group-odd, .table-row-group-even, .table-row-odd, .table-row-even, .table-cell-line-number, .table-cell-line-code {
+html, body, header, nav, main, section, article, table, aside, footer, div, h1, h2, h3, h4, h5, h6 {
     /**  */
     box-sizing: border-box;
 }
@@ -7,6 +7,21 @@ html, body {
     display: block;
     width: 100%;
     height: 100%;
+    /** begin html style adapted from https://vasilis.nl/nerd/weird-62-5-antipattern/ */
+    line-height: 1.414;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: auto;
+    font-family: serif, sans-serif, monospace;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "kern" 1, "liga" on, "dlig" on;
+    -moz-font-feature-settings: "kern" 1, "liga" on, "dlig" on;
+    font-feature-settings: "kern" 1, "liga" on, "dlig" on;
+    -webkit-font-size-adjust: 100%;
+    -moz-font-size-adjust: 100%;
+    font-size-adjust: 100%;
+    /** end appropriated and slightly adapted html style */
 }
 header, nav, footer, h1, h2, h3, h4, h5, h6 {
     /**  */
@@ -334,35 +349,27 @@ h1 {
     table-layout: auto;
     width: 19.375em;
 }
-
 .table-col-group-number, .table-col-group-code {
-
     display: table-column-group;
     -webkit-columns: auto 4;
     -moz-columns: auto 4;
     columns: auto 4;
     text-align: inherit;
     vertical-align: auto;
-    min-width: 2em;
-    min-height: 2em;
 }
-
 .table-col-group-number {
     /**  */
-
+    margin: auto;
+    width: auto;
+    color: #545457;
 }
 .table-col-group-code {
     /**  */
     width: 100%;
 }
-
 .table-col-number, .table-col-code {
-
     display: table-column;
-    min-width: 2em;
-    min-height: 2em;
 }
-
 .table-col-number {
     /**  */
     text-align: left;
@@ -371,21 +378,94 @@ h1 {
     /**  */
     text-align: right;
 }
-.table-row-group-odd {
+.table-row-group {
     /**  */
+    display: table-row-group;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
 }
-.table-row-group-even {
+
+/*.table-row-group-even {
+
+}*/
+
+.table-row-odd, .table-row-even {
     /**  */
+    display: table-row;
 }
 .table-row-odd {
     /**  */
 }
 .table-row-even {
+    background-color: EEEEEE;
+}
+.table-cell-line-number, .table-cell-line-code {
     /**  */
+    display: table-cell;
+    border-collapse: collapse;
+}
+.table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code, .table-row-group, .table-row, .table-cell-line-number, .table-cell-line-code {
+    min-width: 2em;
+    min-height: 2em;
 }
 .table-cell-line-number {
-    /**  */
+    width: auto;
+    margin: auto;
+    padding-right: 0.5em;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    text-align: right;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .table-cell-line-code {
-    /**  */
+    padding-left: 0.3125em;
+    font-family: 'Lucida Console', 'Courier New', Monospace;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
+.table-cell-line-number:hover, .table-cell-line-code:hover {
+    /**  */
+    background-color: linen;
+}
+
+
+/*
+* terminal <ol> style adapted <ol> style appropriated from
+*
+* http://stackoverflow.com/questions/11946098/how-to-remove-dot-after-number-in-ordered-list-items-in-ol-li
+*
+*/
+
+.terminal-ol {
+    /** <ol> style */
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.terminal-li {
+    /** <li> style */
+    min-width: 2.5em;
+    text-align: right;
+    font-family: 'Courier New';
+}
+.terminal-li::before {
+    /** li:before style */
+    content: counter(item) "   ";
+    counter-increment: item;
+    text-align: right;
+}
+
+/**
+*
+* End of appropriation
+*
+*/
