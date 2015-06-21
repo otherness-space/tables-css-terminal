@@ -289,6 +289,8 @@ section {
 }
 article {
     /** */
+
+    background-color: #EEEEEE;
 }
 table {
     /** */
@@ -300,7 +302,7 @@ aside {
 footer {
     /** */
     bottom: 0;
-    background-color: green;
+    background-color: white;
 }
 h2, h3, h4, h5, h6 {
     /**  */
@@ -364,8 +366,9 @@ h1 {
     /*margin-left: 0.25em;*/
     margin-right: 0;
     padding-right: 0;
-    overflow-x: auto;
-    overflow-y: auto;
+    /*overflow-x: auto;
+    overflow-y: auto;*/
+    overflow: hidden;
     white-space: nowrap;
 }
 .terminal-box-style:hover {
@@ -398,16 +401,11 @@ h1 {
 }
 .table-col-group-number, .table-col-group-code {
     display: table-column-group;
-    -webkit-columns: auto 4;
-    -moz-columns: auto 4;
-    columns: auto 4;
-    text-align: inherit;
-    vertical-align: auto;
+    margin: 0;
+    padding: 0;
 }
 .table-col-group-number {
     /**  */
-    margin: auto;
-    width: auto;
     color: #545457;
 }
 .table-col-group-code {
@@ -416,6 +414,7 @@ h1 {
 }
 .table-col-number, .table-col-code {
     display: table-column;
+
 }
 .table-col-number {
     /**  */
@@ -428,6 +427,9 @@ h1 {
 .table-row-group {
     /**  */
     display: table-row-group;
+    margin-right: -10em;
+    width: auto;
+    max-height: 10rem;
     overflow-x: auto;
     overflow-y: auto;
     white-space: nowrap;
@@ -444,9 +446,10 @@ h1 {
 }
 .table-row-odd {
     /**  */
+    background-color: white;
 }
 .table-row-even {
-    background-color: EEEEEE;
+    background-color: #EEEEEE;
 }
 .table-cell-line-number, .table-cell-line-code {
     /**  */
