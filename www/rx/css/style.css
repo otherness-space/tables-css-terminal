@@ -31,179 +31,16 @@ header, nav, main, section, article, .terminal-box-style, aside, footer, h1, h2,
     display: -webkit-flex;
     display: flex;
 }
-
 header, nav, main, section, article, aside, footer, h1, h2, h3, h4, h5, h6 {
-
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
-
 }
-
-
-/*section, article, aside {
-
-    display: -webkit-inline-box;
-    display: -moz-inline-box;
-    display: inline-box;
-    display: -webkit-inline-flexbox;
-    display: -moz-inline-flexbox;
-    display: -ms-inline-flexbox;
-    display: inline-flexbox;
-    display: -webkit-inline-flex;
-    display: inline-flex;
-}*/
 header, nav, footer {
-    /**  */
-    /*-webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    flex-flow: row wrap;*/
-    /*-webkit-flex-flow: row nowrap;
-    -moz-flex-flow: row nowrap;
-    flex-flow: row nowrap;*/
     -webkit-flex-flow: column wrap;
     -moz-flex-flow: column wrap;
     flex-flow: column wrap;
-    /*-webkit-flex-flow: column nowrap;
-    -moz-flex-flow: column nowrap;
-    flex-flow: column nowrap;*/
-    /*-webkit-box-pack: start;
-    -moz-box-pack: start;
-    -ms-box-pack: start;
-    box-pack: start;
-    -webkit-flex-pack: start;
-    -moz-flex-pack: start;
-    -ms-flex-pack: start;
-    flex-pack: start;
-    -webkit-justify-content: flex-start;
-    -moz-justify-content: flex-start;
-    justify-content: flex-start;*/
-    /*-webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-box-pack: center;
-    box-pack: center;
-    -webkit-flex-pack: center;
-    -moz-flex-pack: center;
-    -ms-flex-pack: center;
-    flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center;*/
-    /*-webkit-flex-pack: distribute;
-    -moz-flex-pack: distribute;
-    -ms-flex-pack: distribute;
-    flex-pack: distribute;
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    justify-content: space-around;*/
-    /*-webkit-box-align: start;
-    -moz-box-align: start;
-    -ms-box-align: start;
-    box-align: start;
-    -webkit-flex-align: start;
-    -moz-flex-align: start;
-    -ms-flex-align: start;
-    flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;*/
-    /*-webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-box-align: center;
-    box-align: center;
-    -webkit-flex-align: center;
-    -moz-flex-align: center;
-    -ms-flex-align: center;
-    flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;*/
-    /*-webkit-box-align: baseline;
-    -moz-box-align: baseline;
-    -ms-box-align: baseline;
-    box-align: baseline;
-    -webkit-flex-align: baseline;
-    -moz-flex-align: baseline;
-    -ms-flex-align: baseline;
-    flex-align: baseline;
-    -webkit-align-items: baseline;
-    align-items: baseline;*/
-    /*-webkit-box-align: stretch;
-    -moz-box-align: stretch;
-    -ms-box-align: stretch;
-    box-align: stretch;
-    -webkit-flex-align: stretch;
-    -moz-flex-align: stretch;
-    -ms-flex-align: stretch;
-    flex-align: stretch;
-    -webkit-align-items: stretch;
-    align-items: stretch;*/
-    /*-webkit-flex-line-pack: start;
-    -moz-flex-line-pack: start;
-    -ms-flex-line-pack: start;
-    flex-line-pack: start;
-    -webkit-align-content: flex-start;
-    align-content: flex-start;*/
-    /*-webkit-flex-line-pack: center;
-    -moz-flex-line-pack: center;
-    -ms-flex-line-pack: center;
-    flex-line-pack: center;
-    -webkit-align-content: center;
-    align-content: center;*/
-    /*-webkit-flex-line-pack: justify;
-    -moz-flex-line-pack: justify;
-    -ms-flex-line-pack: justify;
-    flex-line-pack: justify;
-    -webkit-align-content: space-between;
-    align-content: space-between;*/
-    /*-webkit-flex-line-pack: distribute;
-    -moz-flex-line-pack: distribute;
-    -ms-flex-line-pack: distribute;
-    flex-line-pack: distribute;
-    -webkit-align-content: space-around;
-    align-content: space-around;*/
-    /*-webkit-flex-line-pack: stretch;
-    -moz-flex-line-pack: stretch;
-    -ms-flex-line-pack: stretch;
-    flex-line-pack: stretch;
-    -webkit-align-content: stretch;
-    align-content: stretch;*/
-    /** flex: | flex-grow | flex-shrink | flex-basis |; */
-    /** flex: auto; */
-    /*-webkit-flex: auto;
-    -moz-flex: auto;
-    -ms-flex: auto;
-    flex: auto;*/
-    /**
-    -webkit-flex: 1 1 auto;
-    -moz-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    */
-    /*-webkit-flex-item-align: start;
-    -moz-flex-item-align: start;
-    -ms-flex-item-align: start;
-    flex-item-align: start;
-    -webkit-align-self: flex-start;
-    align-self: flex-start;*/
-    /*-webkit-flex-item-align: center;
-    -moz-flex-item-align: center;
-    -ms-flex-item-align: center;
-    flex-item-align: center;
-    -webkit-align-self: center;
-    align-self: center;*/
-    /*-webkit-flex-item-align: baseline;
-    -moz-flex-item-align: baseline;
-    -ms-flex-item-align: baseline;
-    flex-item-align: baseline;
-    -webkit-align-self: baseline;
-    align-self: baseline;*/
-    /*-webkit-flex-item-align: stretch;
-    -moz-flex-item-align: stretch;
-    -ms-flex-item-align: stretch;
-    flex-item-align: stretch;
-    -webkit-align-self: stretch;
-    align-self: stretch;*/
 }
 header, nav, main, section, article, aside, footer, div, h1, h2, h3, h4, h5, h6 {
     /**  */
@@ -224,12 +61,6 @@ header, nav, main, section, article, aside, footer, div, h1, h2, h3, h4, h5, h6 
     flex-line-pack: distribute;
     -webkit-align-content: space-around;
     align-content: space-around;
-    /*-webkit-flex-item-align: baseline;
-    -moz-flex-item-align: baseline;
-    -ms-flex-item-align: baseline;
-    flex-item-align: baseline;
-    -webkit-align-self: baseline;
-    align-self: baseline;*/
     -webkit-flex-item-align: center;
     -moz-flex-item-align: center;
     -ms-flex-item-align: center;
@@ -256,19 +87,13 @@ body {
     position: absolute;
     top: 0;
 }
-
 body, header, nav, main, section, article, aside, footer {
-
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
-
 main, section, article, aside, footer {
-
     min-height: 2em;
-
 }
 body {
     /** */
@@ -281,15 +106,12 @@ nav {
 }
 main {
     /** */
-    /*background-color: lightblue;*/
-
 }
 section {
     /** */
 }
 article {
     /** */
-
     background-color: #EEEEEE;
 }
 table {
@@ -306,9 +128,6 @@ footer {
 }
 h2, h3, h4, h5, h6 {
     /**  */
-    /*position: relative;
-    justify-content: space-around;*/
-    /*line-height: 1em;*/
 }
 h1, h2, h3, h4, h5, h6 {
     position: relative;
@@ -319,17 +138,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     line-height: .75em;
-    /*min-height: */
     margin-top: 0.15625em;
 }
 .header-borderline-black {
     min-width: 20em;
     min-height: 2.5em;
-    /*margin: 0;
-    padding: 0;*/
     border: 0.0625rem solid black;
     border-collapse: collapse;
-    /*width: 100%;*/
     white-space: wrap;
 }
 .borderline-black {
@@ -337,7 +152,6 @@ h1 {
     border-collapse: collapse;
 }
 .terminal-box-style {
-
     -webkit-box-pack: start;
     -moz-box-pack: start;
     -ms-box-pack: start;
@@ -349,26 +163,20 @@ h1 {
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     justify-content: flex-start;
-
     -webkit-flex-line-pack: start;
     -moz-flex-line-pack: start;
     -ms-flex-line-pack: start;
     flex-line-pack: start;
     -webkit-align-content: flex-start;
     align-content: flex-start;
-
     border: 0.0625em solid Gainsboro;
-    /*border: 0.0625em solid black;*/
     max-width: 19.375em;
     max-height: 10rem;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0.15625em;
-    /*margin-left: 0.25em;*/
     margin-right: 0;
     padding-right: 0;
-    /*overflow-x: auto;
-    overflow-y: auto;*/
     overflow: hidden;
     white-space: nowrap;
     -webkit-transition-duration: 2s;
@@ -391,8 +199,6 @@ h1 {
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
-
 .table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code {
     /**  */
 }
@@ -402,16 +208,6 @@ h1 {
 .table-cell-line-number, .table-cell-line-code {
     /**  */
 }
-
-/*.table-style,
-.table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code,
-.table-row-group-odd, .table-row-group-even, .table-row-odd, .table-row-even,
-.table-cell-line-number, .table-cell-line-code {
-
-
-
-}*/
-
 .table-style {
     /**  */
     display: table;
@@ -433,7 +229,6 @@ h1 {
 }
 .table-col-number, .table-col-code {
     display: table-column;
-
 }
 .table-col-number {
     /**  */
@@ -443,12 +238,14 @@ h1 {
     /**  */
     text-align: right;
 }
+
 /**
 *
 * margin-right: -10em; was used because the boxes/cells weren't lining up
 * wondering how that delivers across browsers
 *
 */
+
 .table-row-group {
     /**  */
     display: table-row-group;
@@ -467,7 +264,6 @@ h1 {
 .table-row-odd, .table-row-even {
     /**  */
     display: table-row;
-
 }
 .table-row-odd {
     /**  */
@@ -494,7 +290,6 @@ h1 {
     border-left: 0;
     text-align: right;
     font-weight: bold;
-
 }
 .table-cell-line-code {
     padding-left: 0.3125em;
@@ -509,7 +304,6 @@ h1 {
     /**  */
     background-color: linen;
 }
-
 
 /*
 * terminal <ol> style adapted <ol> style appropriated from
