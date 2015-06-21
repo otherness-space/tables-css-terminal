@@ -23,7 +23,7 @@ html, body {
     font-size-adjust: 100%;
     /** end appropriated and slightly adapted html style */
 }
-header, nav, footer, h1, h2, h3, h4, h5, h6 {
+header, nav, main, section, article, .terminal-box-style, aside, footer, h1, h2, h3, h4, h5, h6 {
     /**  */
     display: -webkit-box;
     display: -moz-box;
@@ -31,8 +31,20 @@ header, nav, footer, h1, h2, h3, h4, h5, h6 {
     display: -webkit-flex;
     display: flex;
 }
-main, section, article, aside {
-    /**  */
+
+header, nav, main, section, article, aside, footer, h1, h2, h3, h4, h5, h6 {
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+}
+
+
+/*section, article, aside {
+
     display: -webkit-inline-box;
     display: -moz-inline-box;
     display: inline-box;
@@ -42,7 +54,7 @@ main, section, article, aside {
     display: inline-flexbox;
     display: -webkit-inline-flex;
     display: inline-flex;
-}
+}*/
 header, nav, footer {
     /**  */
     /*-webkit-flex-flow: row wrap;
@@ -193,7 +205,7 @@ header, nav, footer {
     -webkit-align-self: stretch;
     align-self: stretch;*/
 }
-header, nav, main, section, article, table, aside, footer, div, h1, h2, h3, h4, h5, h6 {
+header, nav, main, section, article, aside, footer, div, h1, h2, h3, h4, h5, h6 {
     /**  */
     -webkit-box-pack: center;
     -moz-box-pack: center;
@@ -239,13 +251,24 @@ selector {
 
 */
 
-body, header, nav, main, section, aside, footer {
+body {
     /** */
     position: absolute;
     top: 0;
+}
+
+body, header, nav, main, section, article, aside, footer {
+
     width: 100%;
     margin: 0;
     padding: 0;
+
+}
+
+main, section, article, aside, footer {
+
+    min-height: 2em;
+
 }
 body {
     /** */
@@ -258,6 +281,8 @@ nav {
 }
 main {
     /** */
+    /*background-color: lightblue;*/
+
 }
 section {
     /** */
@@ -267,12 +292,15 @@ article {
 }
 table {
     /** */
+    background-color: lightyellow;
 }
 aside {
     /** */
 }
 footer {
     /** */
+    bottom: 0;
+    background-color: green;
 }
 h2, h3, h4, h5, h6 {
     /**  */
@@ -307,14 +335,33 @@ h1 {
     border-collapse: collapse;
 }
 .terminal-box-style {
-    display: block;
+
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -ms-box-pack: start;
+    box-pack: start;
+    -webkit-flex-pack: start;
+    -moz-flex-pack: start;
+    -ms-flex-pack: start;
+    flex-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+
+    -webkit-flex-line-pack: start;
+    -moz-flex-line-pack: start;
+    -ms-flex-line-pack: start;
+    flex-line-pack: start;
+    -webkit-align-content: flex-start;
     align-content: flex-start;
+
     border: 0.0625em solid Gainsboro;
     max-width: 19.375em;
     max-height: 10rem;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 0.25em;
+    margin-left: 0.15625em;
+    /*margin-left: 0.25em;*/
     margin-right: 0;
     padding-right: 0;
     overflow-x: auto;
@@ -393,6 +440,7 @@ h1 {
 .table-row-odd, .table-row-even {
     /**  */
     display: table-row;
+
 }
 .table-row-odd {
     /**  */
@@ -405,7 +453,7 @@ h1 {
     display: table-cell;
     border-collapse: collapse;
 }
-.table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code, .table-row-group, .table-row, .table-cell-line-number, .table-cell-line-code {
+.table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code, .table-row-group, .table-row-odd .table-row-even, .table-cell-line-number, .table-cell-line-code {
     min-width: 2em;
     min-height: 2em;
 }
@@ -418,10 +466,7 @@ h1 {
     border-left: 0;
     text-align: right;
     font-weight: bold;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+
 }
 .table-cell-line-code {
     padding-left: 0.3125em;
@@ -450,12 +495,17 @@ h1 {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .terminal-li {
     /** <li> style */
     min-width: 2.5em;
     text-align: right;
     font-family: 'Courier New';
+    font-weight: 900;
 }
 .terminal-li::before {
     /** li:before style */
