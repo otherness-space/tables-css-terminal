@@ -358,6 +358,7 @@ h1 {
     align-content: flex-start;
 
     border: 0.0625em solid Gainsboro;
+    /*border: 0.0625em solid black;*/
     max-width: 19.375em;
     max-height: 10rem;
     margin-top: 0;
@@ -370,10 +371,28 @@ h1 {
     overflow-y: auto;*/
     overflow: hidden;
     white-space: nowrap;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 .terminal-box-style:hover {
     max-width: 100%;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
+
+
 .table-col-group-number, .table-col-group-code, .table-col-number, .table-col-code {
     /**  */
 }
@@ -473,6 +492,7 @@ h1 {
 }
 .table-cell-line-code {
     padding-left: 0.3125em;
+    padding-right: 5em;
     font-family: 'Lucida Console', 'Courier New', Monospace;
     -webkit-user-select: text;
     -moz-user-select: text;
