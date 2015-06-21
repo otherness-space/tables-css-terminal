@@ -77,7 +77,7 @@ header, nav, main, section, article, aside, footer, div, h1, h2, h3, h4, h5, h6 
 
 selector {
 
-    tblr (box offsets if 'position' is other thn static relative  margin edge of element): <length> | <percentage> | auto | inherit;
+    trbl (box offsets if 'position' is other thn static relative  margin edge of element): <length> | <percentage> | auto | inherit;
 }
 
 */
